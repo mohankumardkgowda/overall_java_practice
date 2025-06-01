@@ -34,7 +34,7 @@ public class practice{
 	WebDriver driver;
 	ExtentReports extent = new ExtentReports();
 	ExtentSparkReporter spark = new ExtentSparkReporter("extent.html");
-	
+	//
 	@BeforeTest
 	void beforetezt() {
 		WebDriverManager.chromedriver().setup();
