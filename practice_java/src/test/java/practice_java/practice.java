@@ -126,7 +126,6 @@ public class practice{
 			
 			JavascriptExecutor jz = (JavascriptExecutor) driver;
 			jz.executeScript("window.scrollBy(0,3000)");
-
 			JavascriptExecutor jz1 = (JavascriptExecutor) driver;
 			WebElement element = driver.findElement(By.linkText("Sauce Labs Onesie"));
 			jz1.executeScript("arguments[0].scrollIntoView(true);", element);
