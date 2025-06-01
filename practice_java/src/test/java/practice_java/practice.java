@@ -108,7 +108,7 @@ public class practice{
 			azzert.assertEquals(text, title);
 			System.out.println("abc");
 
-//branch merge edited in git
+//branch merge 
 			azzert.assertAll();
 
 			
