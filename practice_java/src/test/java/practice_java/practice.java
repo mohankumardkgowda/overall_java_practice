@@ -115,8 +115,7 @@ public class practice{
 		    
 			test.pass("working");
 		}catch(Exception e) {
-			test.log(Status.FAIL, "tezt failed"+e.getMessage());
-			
+			test.log(Status.FAIL, "tezt failed"+e.getMessage());	
 		}
 	}
 	@Test(testName = "amd")
