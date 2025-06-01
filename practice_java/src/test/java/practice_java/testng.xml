@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="My_Suite">
+  <test thread-count="5" name="Test">
+
+    <!-- Group Filtering -->
+    <groups>
+      <run>
+        <include name="abc"/>       <!-- Include group 'abc' -->
+        <exclude name="pqr"/>       <!-- Exclude group 'pqr' (exclusion overrides inclusion) -->
+      </run>
+    
+    </groups>
+    
+    <classes>
+      <class name="practice_java.practice" />
+    </classes>
+
+  </test>
+</suite>
