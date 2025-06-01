@@ -142,8 +142,6 @@ public class practice{
 		ExtentTest test=extent.createTest("Verifying");
 		test.info("begining");
 		try {
-			
-			
 			WebElement menubutton= driver.findElement(By.xpath("//*[@id=\"page_wrapper\"]/footer/ul/li[1]/a"));
 			Actions elementaction=new Actions(driver);
 			Action actions=elementaction.moveToElement(menubutton).build();
