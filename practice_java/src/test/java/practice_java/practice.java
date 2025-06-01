@@ -108,7 +108,7 @@ public class practice{
 			azzert.assertEquals(text, title);
 			System.out.println("abc");
 
-
+//branch merge
 			azzert.assertAll();
 
 			
@@ -131,7 +131,7 @@ public class practice{
 			test.pass("working");
 		}catch(Exception e) {
 			test.log(Status.FAIL, "tezt failed"+e.getMessage());
-			
+		//	
 		}
 	}
 	@Test
