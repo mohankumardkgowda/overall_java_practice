@@ -112,7 +112,6 @@ public class practice{
 			azzert.assertAll();
 
 			
-		    
 			test.pass("working");
 		}catch(Exception e) {
 			test.log(Status.FAIL, "tezt failed"+e.getMessage());	
