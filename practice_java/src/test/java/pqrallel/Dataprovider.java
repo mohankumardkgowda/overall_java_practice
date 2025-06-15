@@ -31,7 +31,6 @@ public class Dataprovider {
             System.out.println("Browser not supported: " + browser);
             return;
         }
-
         driver.manage().window().maximize();
         driver.get("https://www.saucedemo.com/");
     }
