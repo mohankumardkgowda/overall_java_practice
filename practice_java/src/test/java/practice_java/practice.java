@@ -145,14 +145,28 @@ public class practice{
 			actions.perform();
 			elementaction.contextClick(menubutton).perform();
 			elementaction.doubleClick(menubutton).perform();
-
 			test.pass("working");
 		}catch(Exception e) {
-			test.log(Status.FAIL, "tezt failed"+e.getMessage());
-			
+			test.log(Status.FAIL, "tezt failed"+e.getMessage());	
 		}
 	}
-
+	
+	@Test
+	void juztpractice() {
+		ExtentTest test=extent.createTest("Verifying");
+		test.info("begining");
+		try {
+			SoftAssert azzert= new SoftAssert();
+			WebElement element=driver.findElement(By.linkText("Sauce Labs Backpack"));
+			String text= element.getText();
+			System.out.print(text);
+			azzert.assertEquals("Samce Labs Backpack", text);
+			azzert.assertAll();
+			
+		}catch(Exception e) {
+			test.log(Status.FAIL, "tezt failed"+e.getMessage());	
+		}
+	}
 	
 	
 	@Test(dependsOnMethods = {"actiontezt", "teztzcroll"}, groups = {"abc", "xyz"})
